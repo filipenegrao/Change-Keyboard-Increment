@@ -9,9 +9,6 @@ from vanilla import *
 
 class KeyboardIncrementClass(PalettePlugin):
 
-    # dialog = objc.IBOutlet()
-    # textField = objc.IBOutlet()
-
     def settings(self):
 
         self.value = 1
@@ -25,7 +22,7 @@ class KeyboardIncrementClass(PalettePlugin):
         self.paletteView.group.plus = SquareButton((100, 15, -20, -45), "+", callback=self.incrementCallback)
         self.paletteView.group.minus = SquareButton((20, 15, -100, -45), "-", callback=self.decrementCallback)
         self.paletteView.group.txt = EditText((70, 15, -70, -45), text=self.value, sizeStyle='small', callback=self.textCallback)
-        self.paletteView.group.resetButton = SquareButton((20, 45, -20, -15), "reset defaults", sizeStyle='mini', callback=self.resetDefaults)
+        self.paletteView.group.resetButton = SquareButton((20, 45, -20, -15), "reset to default", sizeStyle='mini', callback=self.resetDefaults)
 
         # shortcuts
         self.paletteView.group.plus.bind("uparrow", ["command"])
