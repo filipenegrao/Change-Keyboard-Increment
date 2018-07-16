@@ -21,13 +21,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
 	<key>UpdateFeedURL</key>
-	<string>____OnlineUrlToThisPlist____</string>
+	<string>https://github.com/filipenegrao/Glyphs-App-Plugins/blob/master/ChangeIncrement.glyphsPalette/Contents/Info.plist</string>
 	<key>productPageURL</key>
-	<string>____ProductPageURL____</string>
+	<string>https://github.com/filipenegrao/Glyphs-App-Plugins</string>
 	<key>productReleaseNotes</key>
 	<string>____LatestReleaseNotes____</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright, Filipe Negrão, 2018</string>
+	<string>Copyright, Filipe Negrão (@filipenegrao), 2018</string>
 	<key>NSPrincipalClass</key>
 	<string>KeyboardIncrementClass</string>
 	<key>PyMainFileNames</key>
