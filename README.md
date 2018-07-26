@@ -1,6 +1,4 @@
-# Glyphs App Plugins
-
-## Change Keyboard Increment
+# Change Keyboard Increment
 Change Increment is a Palette Plugin for the [Glyphs App](http://glyphsapp.com/). It changes the default keyboard increment value to a settable new one. After installation, the pluggin will show up as a dialog in Glyphs.app’s sidebar on the right edge of the application window (*Window > Palette* or ⌥ + ⌘ + p).
 
 ![Change Increment](change_increment.png "Change Increment Plugin")
