@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+from __future__ import division, print_function, unicode_literals
 import objc
 from GlyphsApp import *
 from GlyphsApp.plugins import *
@@ -9,6 +10,7 @@ from vanilla import *
 
 class KeyboardIncrementClass(PalettePlugin):
 
+    @objc.python_method
     def settings(self):
 
         self.value = 1
@@ -19,10 +21,10 @@ class KeyboardIncrementClass(PalettePlugin):
         height = 80
         self.paletteView = Window((width, height))
         self.paletteView.group = Group((0, 0, width, height))
-        self.paletteView.group.plus = SquareButton((100, 15, -20, -45), "+", callback=self.incrementCallback)
-        self.paletteView.group.minus = SquareButton((20, 15, -100, -45), "-", callback=self.decrementCallback)
-        self.paletteView.group.txt = EditText((70, 15, -70, -45), text=self.value, sizeStyle='small', callback=self.textCallback)
-        self.paletteView.group.resetButton = SquareButton((20, 45, -20, -15), "reset to default", sizeStyle='mini', callback=self.resetDefaults)
+        self.paletteView.group.plus = SquareButton((100, 15, -20, -45), "+", callback=self.incrementCallback_)
+        self.paletteView.group.minus = SquareButton((20, 15, -100, -45), "-", callback=self.decrementCallback_)
+        self.paletteView.group.txt = EditText((70, 15, -70, -45), text=self.value, sizeStyle='small', callback=self.textCallback_)
+        self.paletteView.group.resetButton = SquareButton((20, 45, -20, -15), "reset to default", sizeStyle='mini', callback=self.resetDefaults_)
 
         # shortcuts
         self.paletteView.group.plus.bind("uparrow", ["command"])
@@ -32,36 +34,40 @@ class KeyboardIncrementClass(PalettePlugin):
         # Set dialog to NSView
         self.dialog = self.paletteView.group.getNSView()
 
+    @objc.python_method
     def start(self):
         # Adding a callback for the 'GSUpdateInterface' event
-        Glyphs.addCallback(self.update, UPDATEINTERFACE)
+        Glyphs.addCallback(self.update_, UPDATEINTERFACE)
 
+    @objc.python_method
     def __del__(self):
         Glyphs.removeCallback(self.update)
 
-    def update(self, sender):
+    def update_(self, sender):
         self.font = sender.object()
 
-    def incrementCallback(self, sender):
+    def incrementCallback_(self, sender):
         self.value += 1
         self.paletteView.group.txt.set(self.value)
         self.newValue()
         self.setIncrement()
 
-    def decrementCallback(self, sender):
+    def decrementCallback_(self, sender):
         self.value -= 1
         self.paletteView.group.txt.set(self.value)
         self.newValue()
         self.setIncrement()
 
-    def textCallback(self, sender):
+    def textCallback_(self, sender):
         self.newValue()
         self.setIncrement()
 
+    @objc.python_method
     def newValue(self):
         n = self.paletteView.group.txt.get()
         return int(n)
 
+    @objc.python_method
     def setIncrement(self):
         # Kerning increments:
         Glyphs.intDefaults["GSKerningIncrementLow"] = self.newValue()
@@ -73,7 +79,7 @@ class KeyboardIncrementClass(PalettePlugin):
 
         self.font.keyboardIncrement = float(self.newValue())
 
-    def resetDefaults(self, sender):
+    def resetDefaults_(self, sender):
         self.value = 1
         self.paletteView.group.txt.set(self.value)
         self.newValue()
@@ -82,17 +88,7 @@ class KeyboardIncrementClass(PalettePlugin):
         # del(Glyphs.intDefaults["GSSpacingIncrementLow"])
         # del(Glyphs.intDefaults["GSSpacingIncrementHigh"])
 
+    @objc.python_method
     def __file__(self):
         """Please leave this method unchanged"""
         return __file__
-
-    # Temporary Fix
-    # Sort ID for compatibility with v919:
-    _sortID = 0
-    def setSortID_(self, id):
-        try:
-            self._sortID = id
-        except Exception as e:
-            self.logToConsole( "setSortID_: %s" % str(e) )
-    def sortID(self):
-        return self._sortID
