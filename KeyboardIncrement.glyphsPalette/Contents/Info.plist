@@ -7,22 +7,30 @@
 	<key>CFBundleExecutable</key>
 	<string>plugin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.filipenegrao.KeyboardIncrementClass</string>
+	<string>com.filipenegrao.KeyboardIncrement</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ChangeKeyboardIncrement</string>
+	<string>IncrementChanger</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>UpdateFeedURL</key>
-	<string>https://github.com/filipenegrao/Glyphs-App-Plugins/blob/master/ChangeIncrement.glyphsPalette/Contents/Info.plist</string>
+	<string>____OnlineUrlToThisPlist____</string>
 	<key>productPageURL</key>
-	<string>https://github.com/filipenegrao/Glyphs-App-Plugins</string>
+	<string>____ProductPageURL____</string>
+	<key>productReleaseNotes</key>
+	<string>first commit</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright, Filipe Negrão (@filipenegrao), 2018</string>
+	<string>Copyright, Filipe Negrão, 2020</string>
 	<key>NSPrincipalClass</key>
-	<string>KeyboardIncrementClass</string>
+	<string>KeyboardIncrement</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>PyMainFileNames</key>
+	<array>
+		<string>plugin.py</string>
+	</array>
 </dict>
 </plist>
