@@ -1,7 +1,7 @@
 # Keyboard Increment
 ### Works on Glyphs 2 and 3, Mac OS 10.15 or later
 
-##About
+## About
 
 This is a total remodeling of the older plug-in published in 2018 and moved here:
 
