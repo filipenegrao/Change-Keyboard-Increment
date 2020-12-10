@@ -15,17 +15,17 @@ You can also change the increment for the higher value — the one that you acce
 ### For Mac OS 10.13 and 10.14
 There is a version that works on older Mac OSs that can be found here:
 
-The only difference is on the UI, that can't use that nice switch. This version was kindly tested by Deia Kulpas and Rafael Dietzsch on Mac OS High Sierra using Glyphs 2.
+The only difference is on the UI, that can't use that nice switcher. This version was kindly tested by Deia Kulpas and Rafael Dietzsch on Mac OS High Sierra using Glyphs 2.
 
 For instalation, download the plug-in and add it to the Glyphs App plug-in folder at ~/Library/Application Support/Glyphs/Plugins
 
 ## Usage
 
-1) When the switch is on, the **Keyboard** will only affect the Select Tool's keyboard increment (white arrow). The first option (← →) will change how the arrow keys work and, the second option (⇧) will alter how the keyboard behaves when pressing shift + one of the arrows. **For Glyphs 2 users:** a known issue is that this second option won't work on Glyphs 2, so it will remain work as ten units movement.
+1) When the switcher is on, the **Keyboard** will only affect the Select Tool's keyboard increment (white arrow). The first option (← →) will change how the arrow keys work and, the second option (⇧) will alter how the keyboard behaves when pressing shift + one of the arrows. **For Glyphs 2 users:** a known issue is that this second option won't work on Glyphs 2, so it will remain work as ten units movement.
 
-2) Likewise, the **Metrics**, when on, will change how the keyboard works when spacing a font (i.e., adjusting the left and right sidebearings). That means that it will modify the shortcut Ctrl (⌃) + arrow or Cmd (⌘) + arrow keys, moving left and right sidebearing for whatever value you add to the plugin's text field. For more information on how to deal with spacing on Glyphs App, check the @mekkablue tutorial on [https://glyphsapp.com/learn/spacing](https://glyphsapp.com/learn/spacing).
+2) Likewise, the **Metrics**, when on, will change how the keyboard works when spacing a font (i.e., adjusting the left and right sidebearings). That means that it will modify the shortcut Ctrl (⌃) + arrow or Cmd (⌘) + arrow keys, moving left and right sidebearing for whatever value you add to the plugin's text field. For more information on how to deal with spacing on Glyphs App, check the @mekkablue's tutorial on [https://glyphsapp.com/learn/spacing](https://glyphsapp.com/learn/spacing).
 
-3) The **Kerning** affects, of course, the kerning related shortcuts. For me, it is probably the most useful of the three options. As you might guess, if the kerning switch is on, it will change the Ctrl (⌘) + Opt (⌥) + right or left keys. If this is a mystery to you, go to [https://glyphsapp.com/learn/kerning](https://glyphsapp.com/learn/kerning).
+3) The **Kerning** affects, of course, the kerning related shortcuts. For me, it is probably the most useful of the three options. As you may guess, if the kerning switcher is on, it will change the Ctrl (⌘) + Opt (⌥) + right or left keys. If this is a mystery for you, go to [https://glyphsapp.com/learn/kerning](https://glyphsapp.com/learn/kerning).
 
 ## Installation
 
