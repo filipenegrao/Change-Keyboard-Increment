@@ -3,7 +3,7 @@
 
 ## About
 
-This is a total remodeling of the older plug-in published in 2018 and moved here:
+This is a total remodeling of the older plug-in published in 2018.
 
 *Keyboard Increment* is a palette plug-in for the Glyphs.app’s font editor. It allows you to change the default value — which is 1 unit using the arrows or 10 units adding shift – for whatever value you want to. You can also individually configure different values for the regular use of the arrow keys (i.e. moving something around), to change the left and right sidebearing (⌃ or ⌘ + ← or →) or the kerning (⌘ + ⌥ + ← or →).
 
