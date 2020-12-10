@@ -37,7 +37,6 @@ class KeyboardIncrement(PalettePlugin):
 	kerning_txt_keys = objc.IBOutlet()
 	kerning_txt_shift = objc.IBOutlet()
 
-w
 	@objc.python_method
 	def settings(self):
 		self.name = Glyphs.localize({
