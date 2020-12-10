@@ -1,29 +1,40 @@
-# Change Keyboard Increment
-Change Increment is a Palette Plugin for the [Glyphs App](http://glyphsapp.com/). It changes the default keyboard increment value to a settable new one. After installation, the pluggin will show up as a dialog in Glyphs.app’s sidebar on the right edge of the application window (*Window > Palette* or ⌥ + ⌘ + p).
+# Keyboard Increment
+### Works on Glyphs 2 and 3, Mac OS 10.15 or later
 
-![Change Increment](change_increment.png "Change Increment Plugin")
+##About
 
-### Installation
+This is a total remodeling of the older plug-in published in 2018 and moved here:
 
-1. Download the ZIP file and unpack it, or clone this repository.
-2. Double click the .glyphsFilter file and confirm.
-3. Restart the Glyphs App.
+*Keyboard Increment* is a palette plug-in for the Glyphs.app’s font editor. It allows you to change the default value — which is 1 unit using the arrows or 10 units adding shift – for whatever value you want to. You can also individually configure different values for the regular use of the arrow keys (i.e. moving something around), to change the left and right sidebearing (⌃ or ⌘ + ← or →) or the kerning (⌘ + ⌥ + ← or →).
 
-### Usage Instructions
+You can also change the increment for the higher value — the one that you access adding the shift key (⇧).
 
-I think the usage is pretty much self-explanatory, but one hidden trick is that you can use the shortcuts *⌘ + arrow up* or *down* to change the increment's value. To reset to the default values, it is possible to use *Fn + ⌘ + delete*. 
+![Keyboard Increment](keyboard_increment_glyphs_app.png)
+*After installation, Keyboard Increment will appear in the app palette on the right side (⌘ + ⌥ + P).*
 
-### Requirements
+### For Mac OS 10.13 and 10.14
+There is a version that works on older Mac OSs that can be found here:
 
-The plugin was tested with Glyphs 2.5. It will probably work on 2.4, but I assume it will not work in earlier versions.
+The only difference is on the UI, that can't use that nice switch. This version was kindly tested by Deia Kulpas and Rafael Dietzsch on Mac OS High Sierra using Glyphs 2.
 
-### License
-Copyright (c) 2018 Filipe Negrão (@filipenegrao).
+For instalation, download the plug-in and add it to the Glyphs App plug-in folder at ~/Library/Application Support/Glyphs/Plugins
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## Usage
 
-http://www.apache.org/licenses/LICENSE-2.0
+1) When the switch is on, the **Keyboard** will only affect the Select Tool's keyboard increment (white arrow). The first option (← →) will change how the arrow keys work and, the second option (⇧) will alter how the keyboard behaves when pressing shift + one of the arrows. **For Glyphs 2 users:** a known issue is that this second option won't work on Glyphs 2, so it will remain work as ten units movement.
 
-See the License file included in this repository for further details.
+2) Likewise, the **Metrics**, when on, will change how the keyboard works when spacing a font (i.e., adjusting the left and right sidebearings). That means that it will modify the shortcut Ctrl (⌃) + arrow or Cmd (⌘) + arrow keys, moving left and right sidebearing for whatever value you add to the plugin's text field. For more information on how to deal with spacing on Glyphs App, check the @mekkablue tutorial on [https://glyphsapp.com/learn/spacing](https://glyphsapp.com/learn/spacing).
+
+3) The **Kerning** affects, of course, the kerning related shortcuts. For me, it is probably the most useful of the three options. As you might guess, if the kerning switch is on, it will change the Ctrl (⌘) + Opt (⌥) + right or left keys. If this is a mystery to you, go to [https://glyphsapp.com/learn/kerning](https://glyphsapp.com/learn/kerning).
+
+## Installation
+
+1. Open *Window > Plugin Manager*
+2. Find *Keyboard Increment* and click the *Install* button
+3. Restart Glyphs.app
+
+## License
+
+Copyright 2020 Filipe Negrão Nogueira (@filipenegrao).
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
