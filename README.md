@@ -1,5 +1,5 @@
 # Keyboard Increment
-### Works on Glyphs 2 and 3, Mac OS 10.15 or later
+### Works on Glyphs 2 and 3
 
 ## About
 
@@ -11,15 +11,6 @@ You can also change the increment for the higher value — the one that you acce
 
 ![Keyboard Increment](keyboard_increment_glyphs_app.png)
 *After installation, Keyboard Increment will appear in the app palette on the right side (⌘ + ⌥ + P).*
-
-### For Mac OS 10.13 and 10.14
-There is a version that works on older Mac OSs that can be found here:
-
-[https://github.com/filipenegrao/Keyboard-Increment/tree/master/Older_MacOS_Compatible](https://github.com/filipenegrao/Keyboard-Increment/tree/master/Older_MacOS_Compatible)
-
-The only difference is on the UI, that can't use that nice switcher. This version was kindly tested by Deia Kulpas and Rafael Dietzsch on Mac OS High Sierra using Glyphs 2.
-
-For instalation, download the plug-in and add it to the Glyphs App plug-in folder at ~/Library/Application Support/Glyphs/Plugins
 
 ## Usage
 

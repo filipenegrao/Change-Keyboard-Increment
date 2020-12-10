@@ -15,7 +15,7 @@ from __future__ import division, print_function, unicode_literals
 import objc
 from GlyphsApp import *
 from GlyphsApp.plugins import *
-
+import platform
 
 class KeyboardIncrement(PalettePlugin):
 	
@@ -48,7 +48,13 @@ class KeyboardIncrement(PalettePlugin):
 			})
 		
 		# Load .nib dialog (without .extension)
-		self.loadNib('IBdialog', __file__)
+		version = platform.mac_ver()[0]
+		versionStr = platform.mac_ver()[0]
+		parts = versionStr.split(".")
+		if float(parts[0]+"."+parts[1]) >= 10.15:
+			self.loadNib('IBdialog', __file__)
+		else:
+			self.loadNib('IBdialogpre15', __file__)
 
 	@objc.python_method
 	def start(self):
