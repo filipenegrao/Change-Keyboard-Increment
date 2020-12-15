@@ -13,13 +13,13 @@
 	<key>CFBundleName</key>
 	<string>IncrementChanger</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>UpdateFeedURL</key>
-	<string>https://raw.githubusercontent.com/filipenegrao/Keyboard-Increment/master/KeyboardIncrement.glyphsPalette/Contents/Info.plist</string>
+	<string>https://raw.githubusercontent.com/filipenegrao/Change-Keyboard-Increment/master/ChangeIncrement.glyphsPalette/Contents/Info.plist</string>
 	<key>productPageURL</key>
-	<string>https://github.com/filipenegrao/Keyboard-Increment</string>
+	<string>https://github.com/filipenegrao/Change-Keyboard-Increment</string>
 	<key>productReleaseNotes</key>
 	<string>Initial Commit</string>
 	<key>NSHumanReadableCopyright</key>
