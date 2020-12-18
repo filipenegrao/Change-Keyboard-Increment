@@ -26,6 +26,10 @@ You can also change the increment for the higher value — the one that you acce
 2. Find *Keyboard Increment* and click the *Install* button
 3. Restart Glyphs.app
 
+## Acknowledgements
+
+Thank you to Andrea Kulpas, Diego Maldonado, and Rafael Dietzsch for beta-testing the plug-in. Also, Thank you, @schriftgestalt, for fixing the older Mac OS's compatibilities.
+
 ## License
 
 Copyright 2020 Filipe Negrão Nogueira (@filipenegrao).
