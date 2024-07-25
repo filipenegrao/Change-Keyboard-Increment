@@ -36,7 +36,7 @@ class KeyboardIncrement(PalettePlugin):
 		# Load .nib dialog (without .extension)
 		versionStr = platform.mac_ver()[0]
 		parts = versionStr.split(".")
-		if float(parts[0] + "." + parts[1]) >= 10.15:
+		if float(parts[0] + "." + parts[1]) > 10.15:
 			self.loadNib('IBdialog', __file__)
 		else:
 			self.loadNib('IBdialogpre15', __file__)
