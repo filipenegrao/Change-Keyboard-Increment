@@ -27,7 +27,7 @@ class KeyboardIncrement(PalettePlugin):
 	def settings(self):
 		self.name = Glyphs.localize({
 			'en': 'Keyboard Increment',
-			# 'de': 'Meine Palette',
+			'de': 'Tastatur Schritte',
 			# 'fr': 'Ma palette',
 			# 'es': 'Mi panel',
 			'pt': 'Incremento de Teclado',
