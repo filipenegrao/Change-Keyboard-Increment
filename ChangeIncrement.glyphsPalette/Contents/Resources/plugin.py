@@ -170,54 +170,6 @@ class KeyboardIncrement(PalettePlugin):
 			Glyphs.intDefaults["GSKerningIncrementLow"] = 1
 			Glyphs.intDefaults["GSKerningIncrementHigh"] = 10
 
-	# @objc.IBAction
-	# def setMetrics_(self, sender):
-	# 	# print('Metrics')
-	# 	Glyphs.defaults['com.filipenegrao.KeyboardIncrement.metrics'] = bool(sender.objectValue())
-
-	# @objc.IBAction
-	# def setKerning_(self, sender):
-	# 	# print('Kerning')
-	# 	Glyphs.defaults['com.filipenegrao.KeyboardIncrement.kerning'] = bool(sender.objectValue())
-
-	# @objc.IBAction
-	# def setKeyboard_(self, sender):
-	# 	# print('Keyboard')
-	# 	Glyphs.defaults['com.filipenegrao.KeyboardIncrement.keyboard'] = bool(sender.objectValue())
-
-	# @objc.IBAction
-	# def applyButton_(self, sender):
-
-	# 	font = Glyphs.font
-
-	# 	# get the default values
-	# 	incValue = Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment']
-	# 	applyMetrics = Glyphs.defaults['com.filipenegrao.KeyboardIncrement.metrics']
-	# 	applyKerning = Glyphs.defaults['com.filipenegrao.KeyboardIncrement.kerning']
-	# 	applyKeyboard = Glyphs.defaults['com.filipenegrao.KeyboardIncrement.keyboard']
-
-	# 	if applyMetrics:
-	# 		Glyphs.intDefaults["GSSpacingIncrementLow"] = incValue
-	# 		Glyphs.intDefaults["GSSpacingIncrementLow"] = incValue * 10
-
-	# 	if applyKerning:
-	# 		Glyphs.intDefaults["GSKerningIncrementLow"] = incValue
-	# 		Glyphs.intDefaults["GSKerningIncrementHigh"] = incValue * 10
-
-	# 	if applyKeyboard:
-	# 		font.keyboardIncrement = incValue
-	# 		font.keyboardIncrementBig = incValue * 10
-
-	# @objc.IBAction
-	# def resetButton_(self, sender):
-	# 	print('Reset Button')
-
-	# @objc.python_method
-	# def updateControls(self, sender = None, ui_field):
-	# 	# self.displayValue.setStringValue_(str(Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment']))
-	# 	self.stepper.setIntValue_(Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment'])
-	# 	self.displayValue.setIntValue_(Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment'])
-
 	@objc.python_method
 	def __file__(self):
 		"""Please leave this method unchanged"""
