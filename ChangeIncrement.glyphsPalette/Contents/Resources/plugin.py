@@ -218,10 +218,6 @@ class KeyboardIncrement(PalettePlugin):
 	# 	self.stepper.setIntValue_(Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment'])
 	# 	self.displayValue.setIntValue_(Glyphs.defaults['com.filipenegrao.KeyboardIncrement.increment'])
 
-	@objc.python_method	
-	def __del__(self):
-		Glyphs.removeCallback(self.update)
-
 	@objc.python_method
 	def __file__(self):
 		"""Please leave this method unchanged"""
