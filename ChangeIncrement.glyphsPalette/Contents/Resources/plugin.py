@@ -111,7 +111,7 @@ class KeyboardIncrement(PalettePlugin):
 				font.keyboardIncrementBig = Glyphs.defaults['com.filipenegrao.Increment.keyboard_big']
 			except:
 				# Glyphs 2
-				keyboardIncrement = Glyphs.defaults['com.filipenegrao.Increment.keyboard_small']
+				font.keyboardIncrement = Glyphs.defaults['com.filipenegrao.Increment.keyboard_small']
 
 		else:
 			try:
