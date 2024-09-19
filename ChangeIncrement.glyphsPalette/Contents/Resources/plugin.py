@@ -44,7 +44,7 @@ class KeyboardIncrement(PalettePlugin):
 		Glyphs.registerDefault('com_filipenegrao_Increment_keyboard_small', 1)
 		Glyphs.registerDefault('com_filipenegrao_Increment_keyboard_big', 10)
 		Glyphs.registerDefault('com_filipenegrao_Increment_keyboard_huge', 100)
-		
+
 		Glyphs.registerDefault('com_filipenegrao_Increment_metrics_small', 1)
 		Glyphs.registerDefault('com_filipenegrao_Increment_metrics_big', 10)
 
@@ -76,7 +76,7 @@ class KeyboardIncrement(PalettePlugin):
 
 	@objc.IBAction
 	def applyMetrics_(self, sender):
-		font = Glyphs.font
+		# font = Glyphs.font
 		if Glyphs.boolDefaults["com_filipenegrao_Increment_metrics"]:
 			Glyphs.intDefaults["GSSpacingIncrementLow"] = Glyphs.intDefaults['com_filipenegrao_Increment_metrics_small']
 			Glyphs.intDefaults["GSSpacingIncrementHigh"] = Glyphs.intDefaults['com_filipenegrao_Increment_metrics_big']
@@ -86,7 +86,7 @@ class KeyboardIncrement(PalettePlugin):
 
 	@objc.IBAction
 	def applyKerning_(self, sender):
-		font = Glyphs.font
+		# font = Glyphs.font
 		if Glyphs.boolDefaults["com_filipenegrao_Increment_kerning"]:
 			Glyphs.intDefaults["GSKerningIncrementLow"] = Glyphs.intDefaults['com_filipenegrao_Increment_kerning_small']
 			Glyphs.intDefaults["GSKerningIncrementHigh"] = Glyphs.intDefaults['com_filipenegrao_Increment_kerning_big']
